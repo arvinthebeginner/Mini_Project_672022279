@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_item_kelas">
+
+    <TextView
+        android:id="@+id/textNamaKelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Kelas"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textNamaDosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosen Pengampu"/>
+
+    <TextView
+        android:id="@+id/textNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai: -"/>
+
+    <Button
+        android:id="@+id/buttonMasukKelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue1"
+        android:text="Masuk Kelas"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
+

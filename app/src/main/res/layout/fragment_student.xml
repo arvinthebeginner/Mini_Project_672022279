@@ -1,0 +1,69 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNamaPengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halo, Pengguna"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleGroupKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSemuaKelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semua Kelas"
+                app:checkedIcon="@null"
+                app:iconTint="@android:color/white"
+                app:backgroundTint="@color/btn_toggle_selector" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonKelasSaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelas Saya"
+                app:checkedIcon="@null"
+                app:iconTint="@android:color/white"
+                app:backgroundTint="@color/btn_toggle_selector" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewKelas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

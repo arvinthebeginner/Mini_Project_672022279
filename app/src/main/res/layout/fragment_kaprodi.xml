@@ -1,0 +1,41 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayoutKaprodi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewKelasKaprodi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextNamaKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kelas"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextNamaDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Dosen"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonTambahKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue1"
+            android:text="Tambah Kelas"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
