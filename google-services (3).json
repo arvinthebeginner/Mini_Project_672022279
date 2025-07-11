@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "605912620696",
+    "firebase_url": "https://coba-b4861-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "coba-b4861",
+    "storage_bucket": "coba-b4861.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605912620696:android:e8c01d84d95197180bfaed",
+        "android_client_info": {
+          "package_name": "com.example.coba_dulu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKpFZX5i1Vi4YX2zkICkfAfC1xUTsocOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
